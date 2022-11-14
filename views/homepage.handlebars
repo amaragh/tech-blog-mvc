@@ -1,0 +1,8 @@
+<ol class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{!-- > plus name of partial file plus object to be passed into the partial --}}
+        {{> post-info post}}
+    </li>
+    {{/each}}
+</ol>
