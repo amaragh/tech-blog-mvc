@@ -32,10 +32,11 @@ ol {
     list-style: none;
 }
 
-li {
+.post {
     border: 4px solid var(--main-color);
     margin: 20px;
 }
+
 .title {
     display: flex;
     color: var(--second-color);
@@ -43,6 +44,35 @@ li {
     padding: 5px 10px;
     justify-content: space-between;
 }
+
 .meta {
     padding: 5px 10px;
+    color: var(--main-color);
+}
+
+#logout {
+    color: var(--second-color);
+    background: none;
+    border: none;
+    font-size: 100%;
+}
+
+div.form {
+    border: 4px solid var(--main-color);
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+.comment-form {
+    margin: auto;
+}
+
+.comment-body {
+    width: 100%;
+}
+
+.submit-comment {
+    width: 100%;
 }
