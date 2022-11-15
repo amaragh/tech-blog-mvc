@@ -52,12 +52,6 @@ router.get('/dashboard', (req, res) => {
 });
 
 
-router.get('/home', (req, res) => {
-    if (!req.session.loggedIn) {
-        res.render('login');
-    }
-    
-});
 
 
 module.exports = router;
