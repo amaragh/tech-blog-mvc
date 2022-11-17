@@ -76,3 +76,7 @@ div.form {
 .submit-comment {
     width: 100%;
 }
+
+.add-post-link {
+    color: var(--main-color);
+}

@@ -44,12 +44,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/dashboard', (req, res) => {
-    if (!req.session.loggedIn) {
-        res.render('login');
-    }
 
-});
 
 router.get('/post/:id', (req, res) => {
     Post.findOne({
