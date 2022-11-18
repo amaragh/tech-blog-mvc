@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
-const sequelize = require('../../config/connection');
 
 
 // get all posts
@@ -81,7 +80,6 @@ router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
         content: req.body.content,
-        // change to pull from session later
         user_id: req.session.user_id
     })
         .then(dbPostData => res.json(dbPostData))
