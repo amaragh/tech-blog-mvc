@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--second-color);
 }
 
@@ -21,17 +21,26 @@ header {
     padding: 30px;
     color: var(--second-color);
 }
-
+nav {
+    margin-top: 7px;
+    font-size: 15px;
+}
 
 a {
     color: var(--second-color);
     text-decoration: none;
 }
 
+nav a:hover {
+    font-size: 17px;
+}
+
 ol {
     list-style: none;
 }
-
+.dashboard-link {
+    padding:0 7px;
+}
 .post {
     border: 4px solid var(--main-color);
     margin: 20px;
@@ -54,7 +63,13 @@ ol {
     color: var(--second-color);
     background: none;
     border: none;
-    font-size: 100%;
+    font-size: 15px;
+    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#logout:hover {
+    font-size: 17px;
 }
 
 div.form {
@@ -77,6 +92,25 @@ div.form {
     width: 100%;
 }
 
+.create-post {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .add-post-link {
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--second-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+   
+}
+
+.add-post-link:hover {
+    background-color: rgba(128, 0, 0, 0.8);
+    font-size: 22px;
+}
+
+.login {
+    display: flex;
 }
