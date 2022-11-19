@@ -44,7 +44,9 @@ ol {
     padding: 0 7px;
 }
 
-.post {
+.post,
+.edit-post-container,
+.add-post-container {
     border: 4px solid var(--main-color);
     margin: 20px;
 }
@@ -57,9 +59,14 @@ ol {
     justify-content: space-between;
 }
 
-.meta {
+.meta,
+.text {
     padding: 5px 10px;
     color: var(--main-color);
+    text-align: left;
+}
+.text {
+    color: black;
 }
 
 #logout {
@@ -129,7 +136,7 @@ div.form {
     padding-top: 10px;
 }
 
-.auth-btn {
+.btn {
     width: 100%;
     background-color: var(--main-color);
     color: var(--second-color);
@@ -145,4 +152,53 @@ div.form {
     width: 100%;
     margin-top: 3px;
     padding: 3px 5px;
+}
+
+article {
+    text-align: center;
+}
+
+article a {
+    color: var(--main-color);
+    text-align: left;
+
+}
+
+.dashboard-return {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.edit-post-form div,
+.new-post-form div {
+    padding: 5px 10px;
+}
+
+.edit-post-form div h4 {
+    padding: 5px;
+    text-align: left;
+}
+
+.edit-post-form div input,
+.edit-post-form div textarea,
+.new-post-form div input,
+.new-post-form div textarea {
+    width: 100%;
+}
+
+.update-post-btn,
+.delete-post-btn {
+    margin-bottom: 5px;
+}
+
+.comments {
+    margin: 20px;
+}
+
+.comment {
+    padding: 5px;
+}
+
+.comment:nth-child(odd) {
+    background-color: rgba(128, 0, 0, 0.2);
 }

@@ -1,17 +1,22 @@
 <article>
-    <a href="/dashboard"> Return to Dashboard</a>
-    <h2>
-        Edit Post
-    </h2>
-    <form class="edit-post-form">
-        <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
-            <textarea name="post-content" class="post-content">{{post.content}}</textarea>
-        </div>
-
-        <button type="submit">Update Post</button>
-        <button type="button" class="delete-post-btn">Delete</button>
-    </form>
+    <div class="dashboard-return">
+        <a href="/dashboard">◀ Return to Dashboard</a>
+    </div>
+    <div class="edit-post-container">
+        <h2 class="title">Edit Post</h2>
+        <form class="edit-post-form">
+            <div>
+                <h4>Title</h4>
+                <input name="post-title" type="text" value="{{post.title}}" />
+                <h4>Content</h4>
+                <textarea name="post-content" class="post-content">{{post.content}}</textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn update-post-btn">Update Post</button>
+                <button type="button" class="btn delete-post-btn">Delete</button>
+            </div>
+        </form>
+    </div>
 </article>
 
 <script src="/javascript/edit-post.js"></script>
