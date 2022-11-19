@@ -113,4 +113,32 @@ div.form {
 
 .login {
     display: flex;
+    justify-content: center;
+}
+
+.auth-form {
+    margin:20px 30px;
+    width: 20vw;
+}
+.auth-form div {
+    padding-top: 10px;
+}
+
+.auth-btn {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border:none;
+    box-shadow: 0 0 3px  black;
+    padding:6px;
+    font-size:15px;
+    font-weight: bold;
+    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.auth-form div input {
+    width:100%;
+    margin-top: 3px;
+    padding: 3px 5px;
 }
