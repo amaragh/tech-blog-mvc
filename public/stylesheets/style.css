@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Console', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--second-color);
 }
 
@@ -21,6 +21,7 @@ header {
     padding: 30px;
     color: var(--second-color);
 }
+
 nav {
     margin-top: 7px;
     font-size: 15px;
@@ -38,9 +39,11 @@ nav a:hover {
 ol {
     list-style: none;
 }
+
 .dashboard-link {
-    padding:0 7px;
+    padding: 0 7px;
 }
+
 .post {
     border: 4px solid var(--main-color);
     margin: 20px;
@@ -64,7 +67,7 @@ ol {
     background: none;
     border: none;
     font-size: 15px;
-    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Console', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -103,7 +106,7 @@ div.form {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 20px;
-   
+
 }
 
 .add-post-link:hover {
@@ -113,13 +116,15 @@ div.form {
 
 .login {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .auth-form {
-    margin:20px 30px;
-    width: 20vw;
+    margin: 20px 30px;
+    width: 250px;
 }
+
 .auth-form div {
     padding-top: 10px;
 }
@@ -128,17 +133,16 @@ div.form {
     width: 100%;
     background-color: var(--main-color);
     color: var(--second-color);
-    border:none;
-    box-shadow: 0 0 3px  black;
-    padding:6px;
-    font-size:15px;
+    border: none;
+    box-shadow: 0 0 3px black;
+    padding: 6px;
+    font-size: 15px;
     font-weight: bold;
-    font-family: 'Lucida Console','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: 'Lucida Console', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .auth-form div input {
-    width:100%;
+    width: 100%;
     margin-top: 3px;
     padding: 3px 5px;
 }
